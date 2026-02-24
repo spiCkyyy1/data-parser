@@ -6,7 +6,7 @@ A specialized CLI utility built to aggregate and normalize third-party log data 
 
 Instead of a basic procedural script, I’ve implemented an ETL-style pipeline to ensure the project is maintainable and ready for production-level datasets.
 
-* **Extraction**: Uses `Symfony/Finder` for recursive discovery. This is more robust than `glob()` and handles nested directories and file permissions gracefully.
+* **Extraction**: Uses `Symfony/Finder` for recursive discovery. This handles nested directories and file permissions gracefully.
 * **Transformation Layer**: Transformation logic is decoupled via `LogParserInterface`. By injecting the `LogParserService` into the command, the business logic remains isolated and easy to unit test.
 * **Memory Management**: Leveraging `League/Csv` allows for stream-based I/O. This ensures the tool maintains a constant, low memory footprint even when processing millions of rows.
 * **Strict Typing**: Built for **PHP 8.4** with `strict_types=1` and typed class constants to catch type-mismatch bugs at compile time.
