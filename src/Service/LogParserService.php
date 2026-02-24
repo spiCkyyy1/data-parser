@@ -11,9 +11,24 @@ class LogParserService implements LogParserInterface
     private array $appRegistry = [];
 
     // Using descriptive constant names
-    private const array SUBSCRIPTION_TAGS = ['active_subscriber', 'expired_subscriber', 'never_subscribed', 'subscription_unknown'];
-    private const array FREE_PRODUCT_TAGS = ['has_downloaded_free_product', 'not_downloaded_free_product', 'downloaded_free_product_unknown'];
-    private const array IAP_PRODUCT_TAGS  = ['has_downloaded_iap_product', 'not_downloaded_free_product', 'downloaded_iap_product_unknown'];
+    private const array SUBSCRIPTION_TAGS = [
+        'active_subscriber',
+        'expired_subscriber',
+        'never_subscribed',
+        'subscription_unknown'
+    ];
+
+    private const array FREE_PRODUCT_TAGS = [
+        'has_downloaded_free_product',
+        'not_downloaded_free_product',
+        'downloaded_free_product_unknown'
+    ];
+
+    private const array IAP_PRODUCT_TAGS  = [
+        'has_downloaded_iap_product',
+        'not_downloaded_free_product',
+        'downloaded_iap_product_unknown'
+    ];
 
     public function __construct(string $iniPath)
     {
