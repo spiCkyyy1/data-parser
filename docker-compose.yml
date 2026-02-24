@@ -1,0 +1,6 @@
+services:
+  parser:
+    build: .
+    volumes:
+      - .:/app
+      - /app/vendor
