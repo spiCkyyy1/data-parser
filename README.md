@@ -38,11 +38,4 @@ If you prefer to run it on your host machine:
 * **Logging**: Uses `ConsoleLogger` to provide clear, level-based feedback during execution.
 ---
 
-## Time Investment
-* **Core Architecture & Interface Design**: 1.5 Hours
-* **Dockerization & Dependency Management**: 1 Hour
-* **Refinement & Documentation**: 0.5 Hours
-* **Total**: ~3 Hours
----
-
 **Submission Note:** The `vendor/` folder and `output.csv` are excluded from this repository and will be generated on the first run.
